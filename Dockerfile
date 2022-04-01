@@ -1,7 +1,5 @@
-ARG BASE_USER
-ARG MAINTAINER
-FROM ${BASE_USER}/debian:testing
-MAINTAINER $MAINTAINER
+FROM ubuntu:latest
+MAINTAINER algoflo
 
 # Install Packages (basic tools, cups, basic drivers, HP drivers)
 RUN apt-get update \
