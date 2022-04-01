@@ -35,6 +35,7 @@ RUN useradd \
 
 # Copy the default configuration file
 COPY --chown=root:lp cupsd.conf /etc/cups/cupsd.conf
-
+EXPOSE 631
+EXPOSE 515
 # Default shell
 CMD ["/usr/sbin/cupsd", "-f"]
