@@ -7,6 +7,7 @@ RUN apt-get update \
 && apt-get install -y \
   sudo \
   whois \
+  nano \
   usbutils \
   cups \
   cups-client \
