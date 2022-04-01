@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER algoflo
-
+RUN apt-get update
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
 # Install Packages (basic tools, cups, basic drivers, HP drivers)
 RUN apt-get update \
 && apt-get install -y \
